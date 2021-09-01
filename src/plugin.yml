@@ -1,0 +1,7 @@
+name: fangchenmi
+version: 1.0.0
+main: fangchenmi.FangChenMi
+
+commands:
+  fcm:
+    description: /fcm <year.month.day>
