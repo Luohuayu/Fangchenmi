@@ -47,7 +47,7 @@ public class FangChenMi extends JavaPlugin implements Listener, Runnable {
         }
     }
 
-    @EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
         executors.submit(() -> {

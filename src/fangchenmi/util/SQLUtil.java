@@ -35,8 +35,9 @@ public class SQLUtil {
         int i = 0;
         while (true){
             try {
-                return prepareStatement(sql);
+                return connection.prepareStatement(sql);
             } catch (SQLException e) {
+                e.printStackTrace();
                 if (!(e.getCause() instanceof IOException) || i++ > 3) throw e;
             }
         }
